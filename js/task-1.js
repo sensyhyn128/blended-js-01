@@ -73,59 +73,58 @@
 // ====== Solution 5 ======
 // Написати функцію convertToInteger, яка приймає рядок і повертає ціле число за допомогою parseInt().
 
-// function convertToInteger(string) {
-//   return parseInt(string);
-// }
+function convertToInteger(string) {
+  return parseInt(string);
+}
 
-// console.log(convertToInteger("25")); // 25
-// console.log(convertToInteger("100.75")); // 100
-// console.log(convertToInteger("42px")); // 42
+console.log(convertToInteger("25")); // 25
+console.log(convertToInteger("100.75")); // 100
+console.log(convertToInteger("42px")); // 42
 
 // ====== Solution 5 ======
 // Написати функцію sumStrings, яка приймає два рядки з цілими числами, перетворює їх на числа та повертає суму.
 
-// function sumStrings(firstNumber, secondNumber) {
-//   return Number(firstNumber) + Number(secondNumber);
-// }
+function sumStrings(firstNumber, secondNumber) {
+  return Number(firstNumber) + Number(secondNumber);
+}
 
-// console.log(sumStrings("10", "20")); // 30
-// console.log(sumStrings("15", "5")); // 20
-// console.log(sumStrings("100", "200")); // 300
+console.log(sumStrings("10", "20")); // 30
+console.log(sumStrings("15", "5")); // 20
+console.log(sumStrings("100", "200")); // 300
 
 // ====== Solution 6 ======
 // Написати функцію greet, яка приймає ім'я та повертає привітання. Якщо ім'я не передано, використовувати значення Guest.
 
-// function greet(name = "Guest") {
-//   return `Hello, ${name}`;
-// }
+function greet(name = "Guest") {
+  return `Hello, ${name}`;
+}
 
-// console.log(greet("Anna")); // 'Hello, Anna!'
-// console.log(greet("Max")); // 'Hello, Max!'
-// console.log(greet()); // 'Hello, Guest!'
+console.log(greet("Anna")); // 'Hello, Anna!'
+console.log(greet("Max")); // 'Hello, Max!'
+console.log(greet()); // 'Hello, Guest!'
 
 // ====== Solution 7 ======
 // Написати функцію getPurchaseInfo, яка приймає назву товару, його ціну та кількість. Функція повинна повертати рядок із загальною вартістю покупки.
 
-// function getPurchaseInfo(name, price, quantity) {
-//   const totalPrice = quantity * price;
-//   return `You bought ${quantity} ${name}(s). Total: ${totalPrice} USD.`;
-// }
+function getPurchaseInfo(name, price, quantity) {
+  const totalPrice = quantity * price;
+  return `You bought ${quantity} ${name}(s). Total: ${totalPrice} USD.`;
+}
 
-// console.log(getPurchaseInfo("Book", 20, 3));
-// // 'You bought 3 Book(s). Total: 60 USD.'
+console.log(getPurchaseInfo("Book", 20, 3));
+// 'You bought 3 Book(s). Total: 60 USD.'
 
-// console.log(getPurchaseInfo("Pen", 5, 4));
-// // 'You bought 4 Pen(s). Total: 20 USD.'
+console.log(getPurchaseInfo("Pen", 5, 4));
+// 'You bought 4 Pen(s). Total: 20 USD.'
 
 // ====== Solution 8 ======
 // Написати функцію getAverageGrade, яка приймає три оцінки та повертає середній бал, округлений до двох знаків після коми.
 
-// function getAverageGrade(num1, num2, num3) {
-//   const totalGrade = (num1 + num2 + num3) / 3;
-//   return totalGrade;
-//   // return parseInt(totalGrade);
-// }
+function getAverageGrade(num1, num2, num3) {
+  const totalGrade = (num1 + num2 + num3) / 3;
+  return totalGrade.toFixed(2);
+}
 
-// console.log(getAverageGrade(10, 9, 8)); // '9.00'
-// console.log(getAverageGrade(12, 10, 9)); // '10.33'
-// console.log(getAverageGrade(7, 8, 10)); // '8.33'
+console.log(getAverageGrade(10, 9, 8)); // '9.00'
+console.log(getAverageGrade(12, 10, 9)); // '10.33'
+console.log(getAverageGrade(7, 8, 10)); // '8.33'
